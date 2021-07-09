@@ -340,3 +340,231 @@ input:focus {
 .productImg img {
   width: 180px;
 }
+
+@media (max-width: 1550px) {
+  body {
+    background-color: #00d930;
+  }
+
+  /* user profile  */
+  .Navigation {
+    padding: 1.5rem 1rem 0 1rem;
+  }
+
+  .logo {
+    width: 4rem;
+    height: 4rem;
+    margin: 0.5rem 0 4.5rem 0;
+  }
+
+  .logo img {
+    max-width: 60%;
+  }
+
+  /* profile svg/img/icon */
+
+  .icons {
+    gap: 1.5rem;
+  }
+
+  .icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  /* main container */
+
+  .main {
+    width: 100%;
+    height: 100vh;
+  }
+
+  /* main__first--section */
+
+  .main-child-one {
+    flex: 1;
+    padding: 2.5rem 4.375rem;
+  }
+
+  .main__child-one__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* seacth input  */
+
+  .input {
+    height: 3rem;
+    background-color: #ffffff;
+    border-radius: 1.4rem;
+    display: flex;
+    align-items: center;
+    width: 23rem;
+  }
+
+  .searchsvg {
+    padding: 0.6rem;
+    margin: 0.5rem 0.8rem 0.5rem 0;
+  }
+
+  /* status section  */
+  .main__child-one__header-status {
+    gap: 4rem;
+  }
+
+  .main__child-one__header-status p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  /* if active then it has this lil border  */
+  .active::after {
+    content: "";
+    height: 3px;
+    width: 30%;
+    background: black;
+    position: absolute;
+    margin: auto;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+  }
+
+  /* the progress / proccess chart / bar of the product delivery */
+
+  /* main section of proccess bar  */
+  .main__child-one__progressChart {
+    margin-top: 1rem;
+  }
+
+  .progreesContainer {
+    background-color: #ffffff;
+    border-radius: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  /* the rows fo the section  */
+  .tableRow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-left: 1rem;
+    padding: 0.5rem 2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+
+  /* table heading  */
+  .tableHead {
+    font-weight: 800;
+  }
+
+  /* product info  */
+  .Product {
+    display: flex;
+    gap: 0 1rem;
+    justify-content: space-between;
+  }
+  .productHeading {
+    margin-right: 4rem;
+  }
+
+  .Product img {
+    width: 5rem;
+    border-radius: 10px;
+  }
+
+  /* light heading  */
+  .light {
+    font-weight: 500;
+    color: #bfc4d1;
+  }
+
+  /* the step progress bar  */
+  .line {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 7rem;
+  }
+
+  .line:after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: #00d930;
+    position: absolute;
+    margin: auto;
+    bottom: 13px;
+    left: 0;
+  }
+
+  .circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #ffffff;
+    border: 3px black solid;
+    z-index: 3;
+    border-radius: 50%;
+  }
+
+  .circlelactive {
+    border: 3px #00d930 solid;
+    background-color: #00d930;
+  }
+
+  /* main__second--section  / product page  */
+  .main-child-two {
+    width: 20vw;
+  }
+
+  /* header section of product page  */
+  .main-child-two .head {
+    padding: 2rem 0 0 0;
+  }
+
+  .main-child-two .day {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .main-child-two .head p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .notification__type {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .notification__id {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .orderImg {
+    max-width: 80px;
+  }
+
+  .notification__orderName {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0 1rem;
+  }
+
+  .order__name {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .order__time {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .productImg img {
+    width: 150px;
+  }
+}
