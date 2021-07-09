@@ -237,7 +237,7 @@ input:focus {
 /* main__second--section  / product page  */
 .main-child-two {
   background-color: #ffffff;
-  max-width: 30rem;
+  width: 20vw;
   border-top-left-radius: 2.5rem;
   border-bottom-left-radius: 2.5rem;
   height: 100%;
@@ -266,7 +266,7 @@ input:focus {
 }
 
 .theHead {
-  width: 29.77rem;
+  /* width: 29.77rem; */
   margin: 0 auto;
 }
 
@@ -275,7 +275,7 @@ input:focus {
   background-color: #f4f6f8;
   border-radius: 1.875rem;
   padding: 0 1.375rem;
-  width: 26.938rem;
+  /* width: 26.938rem; */
   margin: 0 auto;
   margin-bottom: 1rem;
 }
