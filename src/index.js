@@ -1,11 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 import "./index.css";
-import App from "./App";
+import Navigation from "./components/Core/Navigation";
+import Main from "./components/Core/Main";
+import Notification from "./components/Core/Notification";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <div className="App">
+        <Navigation />
+        <Main />
+        <Notification />
+      </div>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
