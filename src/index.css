@@ -342,10 +342,6 @@ input:focus {
 }
 
 @media (max-width: 1550px) {
-  body {
-    background-color: #00d930;
-  }
-
   /* user profile  */
   .Navigation {
     padding: 1.5rem 1rem 0 1rem;
