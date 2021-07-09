@@ -1,6 +1,3 @@
-import "./App.css";
-// import cart from "./";
-
 function App() {
   return (
     <div className="App">
