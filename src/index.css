@@ -405,3 +405,26 @@ input:focus {
     max-width: 83px;
   }
 }
+
+@media (min-width: 1800px) {
+  /* user profile  */
+  .Navigation {
+    padding-top: 2.5rem;
+  }
+
+  .logo {
+    margin-bottom: 8rem;
+  }
+
+  .icons {
+    gap: 2.5rem;
+  }
+
+  .main-child-one {
+    padding: 4rem 3.5rem;
+  }
+
+  .main-child-two .head {
+    padding: 4rem 0 0 0;
+  }
+}
