@@ -87,7 +87,7 @@ li {
 /* seacth input  */
 
 .input {
-  height: 3rem;
+  height: 3.5rem;
   background-color: #ffffff;
   border-radius: 1.2rem;
   display: flex;
@@ -328,8 +328,80 @@ input:focus {
   font-weight: 600;
 }
 
-@media (min-width: 1400px) {
-  body {
-    background-color: #00d930;
+/*!!!!!!!!!!!!!!!!ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss this is fucking responsive  */
+
+@media (min-width: 1600px) {
+  /* user profile  */
+  .Navigation {
+    padding: 1.5rem 1.2rem 0 1rem;
+  }
+
+  .logo {
+    width: 4.688rem;
+    height: 4.688rem;
+  }
+
+  /* profile svg/img/icon */
+
+  .icon {
+    width: 4.063rem;
+    height: 4.063rem;
+  }
+
+  /* main__first--section */
+
+  .main-child-one {
+    padding: 3rem 3.5rem;
+  }
+
+  /* main__second--section  / product page  */
+  .main-child-two {
+    width: 25vw;
+  }
+
+  /* header section of product page  */
+  .main-child-two .head {
+    gap: 1rem;
+    padding: 3rem 0 0 0;
+  }
+
+  .head img {
+    width: 1.5rem;
+  }
+
+  .main-child-two .head p {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+
+  .main-child-two .day {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+
+  .main-child-two .notifications {
+    color: #bbc1ce;
+    background-color: #f4f6f8;
+    border-radius: 1.5rem;
+    padding: 0 1rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .notification__type {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+
+  .notification__id,
+  .notification__order,
+  .notification__orderName p,
+  .order__time {
+    font-size: 1.125rem;
+    line-height: 1.688rem;
+  }
+
+  .orderImg {
+    max-width: 83px;
   }
 }
