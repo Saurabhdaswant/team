@@ -92,7 +92,7 @@ li {
   border-radius: 1.2rem;
   display: flex;
   align-items: center;
-  width: 20rem;
+  width: 40%;
 }
 
 input {
@@ -325,4 +325,10 @@ input:focus {
   display: flex;
   justify-content: flex-end;
   font-weight: 600;
+}
+
+@media (min-width: 1400px) {
+  body {
+    background-color: #00d930;
+  }
 }
