@@ -93,6 +93,7 @@ li {
   display: flex;
   align-items: center;
   width: 40%;
+  max-width: 27.063rem;
 }
 
 input {
