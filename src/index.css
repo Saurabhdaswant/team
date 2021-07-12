@@ -94,6 +94,7 @@ li {
   align-items: center;
   width: 40%;
   max-width: 27.063rem;
+  padding: 0 0 0 1rem;
 }
 
 input {
