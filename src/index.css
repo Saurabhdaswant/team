@@ -38,6 +38,15 @@ li {
   list-style: none;
 }
 
+button {
+  border: none;
+}
+
+.bold {
+  font-weight: 600;
+  color: var(--black);
+}
+
 .App {
   display: flex;
 }
@@ -90,12 +99,12 @@ li {
   --path-fill-color: black;
 }
 
-.icon  svg {
+.icon svg {
   width: 17px;
-  }
+}
 
 .icon .statictis .activeIcon svg {
-width: 20px;
+  width: 20px;
 }
 
 /* main container */
@@ -327,7 +336,6 @@ input:focus {
   border-radius: 40px;
   margin: 0 auto;
   padding: 1rem 0.5rem 2rem 0;
-
 }
 
 /*! the stepper ////////////////////////////////////////////////////////////////// */
@@ -613,6 +621,116 @@ input:focus {
   /* font-weight: 600; */
 }
 
+.modalComponent {
+  font-weight: 500;
+}
+
+.modalComponent__head {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0 0 0;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.modalComponent__head--button button {
+  color: var(--red);
+  border-radius: 0.3rem;
+  padding: 0.3rem 1.4rem;
+  background-color: var(--athensGray);
+  font-weight: 700;
+}
+
+.modalComponent__main {
+  /* background-color: #00d930; */
+  height: 89vh;
+  overflow: auto;
+  padding-right: 1rem;
+}
+
+.modalComponent__main::-webkit-scrollbar {
+  width: 10px;
+}
+
+.modalComponent__main::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.modalComponent__main::-webkit-scrollbar-thumb {
+  background-color: #c2c2c2;
+  border-radius: 45px;
+  height: 10px;
+}
+
+.modalComponent__information--product {
+  background-color: var(--athensGray);
+  border-radius: 1.875rem;
+  padding: 25px 0 15px 15px;
+  color: var(--heather);
+}
+.modalComponent__information--product--img img {
+  height: 14rem;
+}
+
+.modalComponent__information--title,
+.modalComponent__attachments--title,
+.modalComponent__writtenNote--title {
+  font-weight: 700;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.modalComponent__information--product {
+  display: flex;
+  gap: 2rem;
+  /* justify-content: space-between; */
+}
+
+.modalComponent__information--product--detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.modalComponent__information--product--detail--name,
+.modalComponent__information--product--detail--category,
+.modalComponent__information--product--detail--size,
+.modalComponent__information--product--detail--quantity {
+  line-height: 0.1;
+}
+
+.modalComponent__information--product--detail--name {
+  font-size: 20px;
+  line-height: 0.5;
+}
+
+.modalComponent__attachments--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: var(--athensGray);
+  border-radius: 1.875rem;
+  padding: 10px 30px;
+  color: var(--heather);
+}
+
+.downloadSvg{
+  background-color: var(--white);
+  border-radius: 1.875rem;
+  padding: 0.3rem ;
+}
+
+
+.modalComponent__writtenNote--Note{
+  padding: 10px 30px;
+  border-radius: 1.875rem;
+  background-color: var(--athensGray);
+  font-size: 14px;
+}
+
+
 /*!!!!!!!!!!!!!!!!ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss this is fucking responsive  */
 
 @media (min-width: 1600px) {
@@ -710,8 +828,6 @@ input:focus {
     width: 23px;
     height: 23px;
   }
-
-
 
   .icons {
     gap: 2.5rem;
