@@ -4,7 +4,6 @@ import steps from "./StepperDB";
 
 const ProductProgressCard = () => {
   const [toogle, settoogle] = useState(0);
-  const [ modalOpen , setModalOpen] = useState(false)
 
   return (
     <div className="ProductProgressCard">
