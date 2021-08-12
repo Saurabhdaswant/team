@@ -8,7 +8,7 @@ const Fut = () => {
         </div>
         <div className="notification--ordertype">
           <div className="orderImg">
-            <img src="svg/tshirt.svg" alt="" />
+            <img src="svg/shirt.png" alt="" />
           </div>
           <div className="notification__orderName">
             <p className="order__name">Bella Canvas</p>

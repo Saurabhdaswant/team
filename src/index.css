@@ -1,10 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
+:root {
+  --black: #000000;
+  --codGray: #121212;
+  --capeCod: #393c3f;
+  --grey: #878787;
+  --silverChalice: #aeaeae;
+  --heather: #bbc1ce;
+  --silver: #c2c2c2;
+  --athensGray: #f4f6f8;
+  --white: #ffffff;
+
+  --guardsmanRed: #d20000;
+  --malibu: #61c6ff;
+  --grannySmithApple: #8be499;
+  --red: #ff0000;
+  --malachite: #00d930;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
   background-color: #121212;
+  text-transform: capitalize;
 }
 
 img {
@@ -24,12 +47,12 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem 1rem 0 1rem;
+  padding: 1.7rem 1.5rem 0 1.5rem;
 }
 
 .logo {
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
   background-color: #f4f6f8;
   margin: 0.5rem 0 6rem 0;
@@ -39,7 +62,8 @@ li {
 }
 
 .logo img {
-  max-width: 60%;
+  max-width: 50%;
+  margin-left: 4px;
 }
 /* profile svg/img/icon */
 
@@ -50,17 +74,28 @@ li {
 }
 
 .icon {
-  width: 3.3rem;
-  height: 3.3rem;
-  border-radius: 1.5rem;
-  background-color: #373b3f;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-color: #373b3f;
+  --path-fill-color: white;
 }
 
-.icons .activeIcon {
-  background-color: #ffffff;
+.icon:focus {
+  background-color: white;
+  --path-fill-color: black;
+}
+
+.icon  svg {
+  width: 17px;
+  }
+
+.icon .statictis .activeIcon svg {
+width: 20px;
 }
 
 /* main container */
@@ -74,27 +109,27 @@ li {
 
 /* main__first--section */
 
-.main-child-one {
+.main__childOne {
   flex: 1;
   padding: 2.5rem 3.5rem;
 }
 
-.main__child-one__header {
+.main__childOne__header {
   display: flex;
   justify-content: space-between;
 }
 
 /* seacth input  */
 
-.input {
-  height: 3.5rem;
+.header__input {
+  height: 3.3rem;
   background-color: #ffffff;
   border-radius: 1.2rem;
   display: flex;
   align-items: center;
   width: 40%;
-  max-width: 27.063rem;
-  padding: 0 0 0 1rem;
+  max-width: 22rem;
+  padding-left: 1rem;
 }
 
 input {
@@ -109,38 +144,37 @@ input:focus {
   outline: none;
 }
 
-.searchsvg {
+.header__search {
   /* padding: 0.75rem 0.813rem; */
   padding: 0.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 1.2rem;
+  border-radius: 1rem;
   margin: 0.5rem 0.8rem 0.5rem 0;
   background-color: #f4f6f8;
 }
 
 /* status section  */
-.main__child-one__header-status {
+.header__status {
   display: flex;
   justify-content: space-between;
   gap: 4rem;
 }
 
-.main__child-one__header-status p {
+.header__status p {
   color: #bbc1c7;
-  font-weight: 600;
-  font-size: 18px;
   line-height: 27px;
+  text-transform: capitalize;
 }
-.main__child-one__header-status .active {
+.header__status .header__status--active {
   position: relative;
   font-weight: 600;
   color: black;
 }
 
 /* if active then it has this lil border  */
-.active::after {
+.header__status--active::after {
   content: "";
   height: 3px;
   width: 30%;
@@ -152,59 +186,299 @@ input:focus {
   right: 0;
 }
 
+.navbar__nav {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+  align-items: center;
+  height: 3.5rem;
+  margin-top: 2rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  color: #bbc1ce;
+  font-weight: 500;
+}
+
+.navbar__nav .nav__item {
+  padding: 0.3rem;
+  max-width: 8rem;
+}
+
+.nav__item--active {
+  color: #fff;
+  width: 5rem;
+  margin: 0 auto;
+  border-radius: 0.8rem;
+  background-color: black;
+}
+
+.main__childOne__orders {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+  text-align: center;
+  align-items: center;
+  margin: 0.5rem 0;
+  color: #9e9d9d;
+}
+
+.orders--type {
+  color: #878787;
+}
+
+.orders__filterAndsort {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.filter,
+.sort {
+  width: 6rem;
+  background-color: #fff;
+  padding: 0.5rem 0;
+  border-radius: 0.55rem;
+}
+
+.gridTrack,
+.title {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  text-align: center;
+  padding: 0.3rem 1.5rem;
+  color: #bbc1ce;
+  align-items: center;
+  height: 4.5rem;
+  overflow: hidden;
+}
+.gridTrack:hover {
+  max-width: 97%;
+  border-radius: 10px;
+  height: 10rem;
+  margin: 0.2rem 0;
+  margin: 0 auto;
+  align-items: flex-start;
+  box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.14);
+  overflow: initial;
+}
+
+.item1 {
+  display: flex;
+  gap: 1rem;
+  color: #121212;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: left;
+  align-items: center;
+}
+
+.shirtInfo__shirtName {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.item1 p {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  color: #121212;
+  font-weight: 600;
+  padding: 0 1.5rem;
+}
+
+.product {
+  color: #121212;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: left;
+}
+
+.item7 {
+  color: #121212;
+  font-weight: 500;
+}
+
+.item8 {
+  max-width: 50%;
+  margin: 0 auto;
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+
+.item9 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  margin-left: 8rem;
+}
+
+.stepper {
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+}
+
 /* the progress / proccess chart / bar of the product delivery */
 
 /* main section of proccess bar  */
-.main__child-one__progressChart {
-  margin-top: 1rem;
-}
-
 .progreesContainer {
   background-color: #ffffff;
-  border-radius: 3rem;
-  max-width: 1000px;
+  border-radius: 40px;
   margin: 0 auto;
+  padding: 1rem 0.5rem 2rem 0;
+
 }
 
-/* the rows fo the section  */
-.tableRow {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  margin-left: 1rem;
-  padding: 0.5rem 2rem;
+/*! the stepper ////////////////////////////////////////////////////////////////// */
+
+.ProductProgressCard {
+  height: 39vh;
+  overflow: auto;
+
+  /* border: 2px solid seagreen; */
+}
+
+.ProductProgressCard::-webkit-scrollbar {
+  width: 10px;
+}
+
+.ProductProgressCard::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.ProductProgressCard::-webkit-scrollbar-thumb {
+  background-color: #c2c2c2;
+  border-radius: 45px;
+  height: 10px;
+}
+
+.TrackAndStepper {
+  /* border: 2px solid rgb(250, 109, 238); */
+
+  max-width: 97%;
+
+  margin: 0 auto;
+  padding: 0.5rem;
+
+  height: 4.5rem;
+  overflow: hidden;
+
+  transition: all 300ms ease-out;
+  font-weight: 500;
+  font-size: 14px;
+
   text-transform: capitalize;
-  font-weight: 700;
+  cursor: pointer;
 }
 
-/* table heading  */
-.tableHead {
-  font-weight: 800;
-}
+/* .TrackAndStepper:focus {
+  height: max-content;
+} */
 
-/* product info  */
-.Product {
-  display: flex;
-  gap: 0 1rem;
-  justify-content: space-between;
-}
-.productHeading {
-  margin-right: 4rem;
-}
-
-.Product img {
-  width: 5rem;
+.focus {
+  height: max-content;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 
-/* light heading  */
-.light {
-  font-weight: 500;
-  color: #bfc4d1;
+.ProductProgressCard__Track .Track__GridTrack {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  text-align: center;
+  align-items: center;
+
+  color: #bbc1ce;
+  /* border: 2px solid rgb(139, 88, 46); */
 }
 
-/* the step progress bar  */
+.itemOne {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+
+  gap: 1rem;
+  text-align: left;
+  align-items: center;
+}
+
+.itemOne p {
+  margin: 0;
+  padding: 0;
+}
+
+.ShirtType__BrandName {
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #121212;
+}
+
+.itemSeven {
+  color: #121212;
+  font-weight: 600;
+}
+
+.ProductProgressCard__Stepper {
+  /* border: 2px solid rgb(63, 46, 139); */
+}
+
+.Done__CheckList,
+.shipping,
+.Stepper__DayAndDate {
+  max-width: 80%;
+  margin: 0 auto;
+
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.shipping {
+  font-weight: 600;
+}
+
+.ProductProgressCard__Stepper * {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  padding-bottom: 0;
+}
+
+.Stepper__DayAndDate {
+  color: #bbc1c7;
+}
+
+.Stepper__day {
+  display: flex;
+  justify-content: center;
+}
+
+.Done__CheckList {
+  display: grid;
+  place-items: center;
+  padding: 0.2rem 0;
+}
+
+.done {
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  background-color: #00d930;
+}
+
+.CheckList__Circle {
+  width: 1.3rem;
+  height: 1.3rem;
+  border: 3px solid #121212;
+  border-radius: 50%;
+  background: #fff;
+
+  z-index: 10;
+}
+
 .line {
   position: relative;
   display: flex;
@@ -215,26 +489,13 @@ input:focus {
 .line:after {
   content: "";
   height: 3px;
-  width: 100%;
+  width: 90%;
   background: #00d930;
   position: absolute;
   margin: auto;
   bottom: 13px;
+  right: 0;
   left: 0;
-}
-
-.circle {
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #ffffff;
-  border: 3px black solid;
-  z-index: 3;
-  border-radius: 50%;
-}
-
-.circlelactive {
-  border: 3px #00d930 solid;
-  background-color: #00d930;
 }
 
 .notification {
@@ -244,11 +505,11 @@ input:focus {
 /* main__second--section  / product page  */
 .main-child-two {
   background-color: #ffffff;
-  width: 23vw;
+  width: 27vw;
   border-top-left-radius: 2.5rem;
   border-bottom-left-radius: 2.5rem;
   height: 100%;
-  padding: 0 1.5rem;
+  padding: 0 1rem 0 1.5rem;
 }
 
 /* header section of product page  */
@@ -273,6 +534,27 @@ input:focus {
   font-weight: 600;
 }
 
+.theHead__notification {
+  height: 75vh;
+  overflow: auto;
+  padding-right: 1rem;
+}
+
+.theHead__notification::-webkit-scrollbar {
+  width: 10px;
+}
+
+.theHead__notification::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.theHead__notification::-webkit-scrollbar-thumb {
+  background-color: #c2c2c2;
+  border-radius: 45px;
+  height: 10px;
+}
+
 .main-child-two .notifications {
   color: #bbc1ce;
   background-color: #f4f6f8;
@@ -288,7 +570,7 @@ input:focus {
 }
 
 .notification__id {
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .notification__order {
@@ -314,7 +596,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-weight: 600;
+  /* font-weight: 600; */
   padding: 0 1rem;
 }
 
@@ -328,7 +610,7 @@ input:focus {
 .order__time {
   display: flex;
   justify-content: flex-end;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 /*!!!!!!!!!!!!!!!!ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss this is fucking responsive  */
@@ -409,6 +691,8 @@ input:focus {
   }
 }
 
+/*! /////////////////////////////////////////////////////////////////////////////////// */
+
 @media (min-width: 1800px) {
   /* user profile  */
   .Navigation {
@@ -418,6 +702,16 @@ input:focus {
   .logo {
     margin-bottom: 8rem;
   }
+  .icon {
+    border-radius: 1.5rem;
+  }
+
+  .icon svg {
+    width: 23px;
+    height: 23px;
+  }
+
+
 
   .icons {
     gap: 2.5rem;
@@ -426,8 +720,79 @@ input:focus {
   .main-child-one {
     padding: 4rem 3.5rem;
   }
+  .main__childOne__header {
+    margin-top: 1rem;
+  }
 
   .main-child-two .head {
     padding: 4rem 0 0 0;
+  }
+
+  .header__input {
+    height: 3.5rem;
+    max-width: 25rem;
+  }
+
+  /* status section  */
+  .header__status {
+    font-size: 1.2rem;
+  }
+
+  /* if active then it has this lil border  */
+  .header__status--active::after {
+    width: 40%;
+  }
+
+  .navbar__nav {
+    height: 4.5rem;
+    margin-top: 3.5rem;
+    font-size: 1.4rem;
+  }
+
+  .navbar__nav .nav__item {
+    padding: 0.5rem 0.3rem;
+    max-width: 8rem;
+  }
+
+  .nav__item--active {
+    width: 7rem;
+  }
+
+  .main__childOne__orders {
+    font-size: 1.4rem;
+  }
+
+  .orders--type {
+    font-size: 1.6rem;
+  }
+
+  .progreesContainer {
+    font-size: 1.5rem;
+  }
+
+  .ProductProgressCard {
+    height: 50vh;
+    /* border: 2px solid seagreen; */
+  }
+
+  .TrackAndStepper {
+    height: 5.5rem;
+    font-size: 20px;
+  }
+
+  .focus {
+    height: max-content;
+  }
+
+  .line:after {
+    content: "";
+    height: 3px;
+    width: 80%;
+    background: #00d930;
+    position: absolute;
+    margin: auto;
+    bottom: 13px;
+    right: 0px;
+    left: 0px;
   }
 }
