@@ -49,7 +49,7 @@ const ProductProgressCard = () => {
               <div className="Stepper__Done">
                 <div className="Done__CheckList" key={id}>
                   {steps.map((step) => {
-                    const { done, id } = step;
+                    const { done } = step;
                     return (
                       <div
                         className={done ? "done" : "CheckList__Circle"}
