@@ -1,5 +1,4 @@
 import { Switch, Route } from "react-router-dom";
-// import { useState } from "react";
 import Fut from "../Fut";
 
 const Notification = () => {
