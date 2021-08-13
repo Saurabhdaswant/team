@@ -39,8 +39,8 @@ const Modal = () => {
           <div className="modalComponent__attachments--container">
             <div className="modalComponent__attachments--container--name">
               <p className="bold">Name</p>
-              <p>imgage</p>
-              <p>imgage</p>
+              <p>image.png</p>
+              <p>image2.png</p>
             </div>
             <div className="modalComponent__attachments--container--size">
               <p className="bold">Size</p>

@@ -629,7 +629,6 @@ input:focus {
 .order__time {
   display: flex;
   justify-content: flex-end;
-  /* font-weight: 600; */
 }
 
 .modalComponent {
@@ -639,7 +638,7 @@ input:focus {
 .modalComponent__head {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 0 0 0;
+  padding: 3rem 0 0 0;
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -653,8 +652,7 @@ input:focus {
 }
 
 .modalComponent__main {
-  /* background-color: #00d930; */
-  height: 89vh;
+  height: 85vh;
   overflow: auto;
   padding-right: 1rem;
 }
@@ -723,14 +721,23 @@ input:focus {
   text-align: center;
   background-color: var(--athensGray);
   border-radius: 1.875rem;
-  padding: 10px 30px;
   color: var(--heather);
+
+  padding: 5px 30px;
+  line-height: 0.80;
+}
+
+.modalComponent__attachments--container--download svg{
+
 }
 
 .downloadSvg{
   background-color: var(--white);
   border-radius: 1.875rem;
-  padding: 0.3rem ;
+  padding: 3px;
+  width: 40px;
+
+  margin: 6px auto;
 }
 
 

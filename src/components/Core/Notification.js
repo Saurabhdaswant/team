@@ -5,7 +5,7 @@ import Modal from "../Modal";
 
 const Notification = () => {
 
-  const [modal] = useState(false)
+  const [modal] = useState(true)
   
   return (
     <div className="notification">

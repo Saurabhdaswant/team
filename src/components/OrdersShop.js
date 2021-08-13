@@ -64,7 +64,7 @@ const OrdersShop = () => {
                   <p>placed</p>
                   <p>printed</p>
                   <p>dispatched</p>
-                  <p>out</p>
+                  <p>out for delivery</p>
                   <p>delivered</p>
                 </div>
               </div>
