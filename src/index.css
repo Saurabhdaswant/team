@@ -107,6 +107,10 @@ button {
   width: 20px;
 }
 
+.profile svg , .dolar svg{
+  width: 15px;
+}
+
 /* main container */
 
 .main {
