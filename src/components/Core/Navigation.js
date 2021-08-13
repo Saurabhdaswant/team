@@ -166,7 +166,7 @@ const Navigation = () => {
             />
           </svg>
         </Link>
-        <Link to="/Money" className="icon dolar" tabIndex="0" ref={refSeven} onFocus={updateFill}>
+        <Link to="/Accounting" className="icon dolar" tabIndex="0" ref={refSeven} onFocus={updateFill}>
           <svg
             // width="17"
             // height="17"
