@@ -5,7 +5,6 @@ import CustomerService from "../CustomerService"
 import Fundraise from "../Fundraise"
 import Customer from "../CustomerService"
 import OrdersQuote from "../OrdersQuote"
-// import ProductProgressCard from "../ProductProgressCard";
 import OrdersShop from "../OrdersShop";
 
 const Main = () => {
