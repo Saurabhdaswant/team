@@ -5,7 +5,8 @@ import CustomerService from "../CustomerService"
 import Fundraise from "../Fundraise"
 import Customer from "../CustomerService"
 import OrdersQuote from "../OrdersQuote"
-import ProductProgressCard from "../ProductProgressCard";
+// import ProductProgressCard from "../ProductProgressCard";
+import OrdersShop from "../OrdersShop";
 
 const Main = () => {
   return (
@@ -56,7 +57,7 @@ const Main = () => {
               <p>Price</p>
             </div>
             <Switch>
-              <Route exact path="/" component={ProductProgressCard} />
+              <Route exact path="/" component={OrdersShop} />
               <Route  path="/OrdersQuote" component={OrdersQuote} />
               <Route path="/Fundraise" component={Fundraise} />
               <Route path="/CustomerService" component={CustomerService} />

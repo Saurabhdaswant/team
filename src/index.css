@@ -26,7 +26,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #121212;
+  background-color: var(--codGray);
   text-transform: capitalize;
 }
 
@@ -348,23 +348,23 @@ input:focus {
 
 /*! the stepper ////////////////////////////////////////////////////////////////// */
 
-.ProductProgressCard {
+.OrdersShop {
   height: 39vh;
   overflow: auto;
 
   /* border: 2px solid seagreen; */
 }
 
-.ProductProgressCard::-webkit-scrollbar {
+.OrdersShop::-webkit-scrollbar {
   width: 10px;
 }
 
-.ProductProgressCard::-webkit-scrollbar-track {
+.OrdersShop::-webkit-scrollbar-track {
   border-radius: 10px;
   background-color: transparent;
 }
 
-.ProductProgressCard::-webkit-scrollbar-thumb {
+.OrdersShop::-webkit-scrollbar-thumb {
   background-color: #c2c2c2;
   border-radius: 45px;
   height: 10px;
@@ -399,7 +399,7 @@ input:focus {
   border-radius: 10px;
 }
 
-.ProductProgressCard__Track .Track__GridTrack {
+.OrdersShop__Track .Track__GridTrack {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
 
@@ -436,7 +436,7 @@ input:focus {
   font-weight: 600;
 }
 
-.ProductProgressCard__Stepper {
+.OrdersShop__Stepper {
   /* border: 2px solid rgb(63, 46, 139); */
 }
 
@@ -456,7 +456,7 @@ input:focus {
   font-weight: 600;
 }
 
-.ProductProgressCard__Stepper * {
+.OrdersShop__Stepper * {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
@@ -894,7 +894,7 @@ input:focus {
     font-size: 1.5rem;
   }
 
-  .ProductProgressCard {
+  .OrdersShop {
     height: 50vh;
     /* border: 2px solid seagreen; */
   }

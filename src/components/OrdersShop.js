@@ -2,11 +2,11 @@ import { useState } from "react";
 import shirts from "./ShirtData";
 import steps from "./StepperDB";
 
-const ProductProgressCard = () => {
+const OrdersShop = () => {
   const [toogle, settoogle] = useState(0);
 
   return (
-    <div className="ProductProgressCard">
+    <div className="OrdersShop">
       {shirts.map((shirt) => {
         const {
           id,
@@ -26,7 +26,7 @@ const ProductProgressCard = () => {
             className={`TrackAndStepper ${toogle === id && "focus"}`}
             tabindex="0"
           >
-            <div className="ProductProgressCard__Track">
+            <div className="OrdersShop__Track">
               <div className="Track__GridTrack" key={id}>
                 <div className="itemOne">
                   <div className="itemOne__Img--Shirt orderImg">
@@ -45,7 +45,7 @@ const ProductProgressCard = () => {
                 <div className="itemSeven">${price}</div>
               </div>
             </div>
-            <div className="ProductProgressCard__Stepper">
+            <div className="OrdersShop__Stepper">
               <div className="Stepper__Done">
                 <div className="Done__CheckList" key={id}>
                   {steps.map((step) => {
@@ -91,4 +91,4 @@ const ProductProgressCard = () => {
   );
 };
 
-export default ProductProgressCard;
+export default OrdersShop;
