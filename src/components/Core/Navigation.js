@@ -74,7 +74,7 @@ const Navigation = () => {
             />
           </svg>
         </Link>
-        <Link to="/" className="icon qoute" tabIndex="0" ref={refTwo} onFocus={updateFill}>
+        <Link to="/OrdersQuote" className="icon qoute" tabIndex="0" ref={refTwo} onFocus={updateFill}>
           <svg
             // width="17"
             // height="17"
@@ -89,7 +89,7 @@ const Navigation = () => {
             />
           </svg>
         </Link>
-        <Link to="/CustomServices" className="icon customerCare" tabIndex="0" ref={refThree} onFocus={updateFill}>
+        <Link to="/Fundraise" className="icon customerCare" tabIndex="0" ref={refThree} onFocus={updateFill}>
           <svg
             // width="17"
             // height="17"
@@ -107,7 +107,7 @@ const Navigation = () => {
             />
           </svg>
         </Link>
-        <Link to="/Calling" className="icon calling" tabIndex="0" ref={refFour} onFocus={updateFill}>
+        <Link to="/CustomerService" className="icon calling" tabIndex="0" ref={refFour} onFocus={updateFill}>
           <svg
             // width="17"
             // height="17"

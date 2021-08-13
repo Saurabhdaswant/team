@@ -1,8 +1,10 @@
 import { Switch, Route } from "react-router-dom";
-import Account from "../Account";
-import CustomServices from "../CustomServices";
-import Statictis from "../Statictis";
-import Money from "../Money";
+import Statictis from "../Analytics";
+import Money from "../Accounting";
+import CustomerService from "../CustomerService"
+import Fundraise from "../Fundraise"
+import Customer from "../CustomerService"
+import OrdersQuote from "../OrdersQuote"
 import ProductProgressCard from "../ProductProgressCard";
 
 const Main = () => {
@@ -55,8 +57,10 @@ const Main = () => {
             </div>
             <Switch>
               <Route exact path="/" component={ProductProgressCard} />
-              <Route path="/Account" component={Account} />
-              <Route path="/CustomServices" component={CustomServices} />
+              <Route  path="/OrdersQuote" component={OrdersQuote} />
+              <Route path="/Fundraise" component={Fundraise} />
+              <Route path="/CustomerService" component={CustomerService} />
+              <Route path="/Customer" component={Customer} />
               <Route path="/Statictis" component={Statictis} />
               <Route path="/Money" component={Money} />
             </Switch>

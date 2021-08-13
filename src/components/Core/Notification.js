@@ -1,11 +1,11 @@
 import { Switch, Route } from "react-router-dom";
 import { useState } from "react";
-import Fut from "../Fut";
+import Message from "../Message"
 import Modal from "../Modal";
 
 const Notification = () => {
 
-  const [modal] = useState(true)
+  const [modal] = useState(false)
   
   return (
     <div className="notification">
@@ -20,19 +20,19 @@ const Notification = () => {
     <h3 className="day">Today</h3>
   </div>
   <div className="theHead__notification">
-    <Fut />
-    <Fut />
-    <Fut />
-    <Fut />
-    <Fut />
-    <Fut />
-    <Fut />
-    <Fut />
-    <Fut />
-    <Fut />
+    <Message />
+    <Message />
+    <Message />
+    <Message />
+    <Message />
+    <Message />
+    <Message />
+    <Message />
+    <Message />
+    <Message />
     <Switch>
-      <Route exact path="/" component={Fut} />
-      <Route path="/Fut" component={Fut} />
+      <Route exact path="/" component={Message} />
+      <Route path="/Message" component={Message} />
     </Switch>
   </div>
 </div>
