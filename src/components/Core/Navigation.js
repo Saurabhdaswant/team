@@ -60,7 +60,7 @@ const Navigation = () => {
         <img src="svg/logo.svg" alt="" />
       </div>
       <div className="icons">
-        <Link to="/" className="icon activeIcon" tabIndex="0" ref={refOne} onFocus={updateFill} >
+        <Link to="/" className="icon OrdersShopIcon" tabIndex="0" ref={refOne} onFocus={updateFill} >
           <svg
             // width="20"
             // height="20"
