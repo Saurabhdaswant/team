@@ -12,7 +12,7 @@ ReactDOM.render(
       <div className="App">
         <Navigation />
         <Main />
-        <Notification />
+        <Notification/>
       </div>
     </BrowserRouter>
   </React.StrictMode>,
