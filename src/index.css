@@ -693,8 +693,7 @@ input:focus {
   border-radius: 25px;
   margin: 0 auto;
   margin-top: 5.813rem;
-  /* padding: 1rem 5rem 1rem 5rem; */
-  padding: 1rem;
+  padding: 1rem 0;
 
   height: 67vh;
   overflow: auto;
@@ -740,6 +739,7 @@ input:focus {
 
 .CustomerDetailCard {
   color: var(--heather);
+  margin: 0 1rem;
 }
 
 .MainMsg {
