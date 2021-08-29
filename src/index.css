@@ -259,8 +259,6 @@ input:focus {
   padding: 0.5rem 0;
   border-radius: 0.55rem;
 }
-
-.gridTrack,
 .title {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -270,36 +268,6 @@ input:focus {
   align-items: center;
   height: 4.5rem;
   overflow: hidden;
-}
-.gridTrack:hover {
-  max-width: 97%;
-  border-radius: 10px;
-  height: 10rem;
-  margin: 0.2rem 0;
-  margin: 0 auto;
-  align-items: flex-start;
-  box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.14);
-  overflow: initial;
-}
-
-.item1 {
-  display: flex;
-  gap: 1rem;
-  color: #121212;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  text-align: left;
-  align-items: center;
-}
-
-.shirtInfo__shirtName {
-  font-weight: 600;
-  text-transform: capitalize;
-}
-
-.item1 p {
-  margin: 0;
-  padding: 0;
 }
 
 .title {
@@ -314,31 +282,6 @@ input:focus {
   grid-column-end: 3;
   text-align: left;
 }
-
-.item7 {
-  color: #121212;
-  font-weight: 500;
-}
-
-.item8 {
-  max-width: 50%;
-  margin: 0 auto;
-  grid-column-start: 1;
-  grid-column-end: 7;
-}
-
-.item9 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  margin-left: 8rem;
-}
-
-.stepper {
-  display: flex;
-  gap: 4rem;
-  justify-content: space-between;
-}
-
 /* the progress / proccess chart / bar of the product delivery */
 
 /* main section of proccess bar  */
@@ -398,7 +341,9 @@ input:focus {
 
 .focus {
   height: max-content;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.09);
+
   border-radius: 10px;
 }
 
@@ -727,9 +672,6 @@ input:focus {
   line-height: 0.80;
 }
 
-.modalComponent__attachments--container--download svg{
-
-}
 
 .downloadSvg{
   background-color: var(--white);
@@ -748,6 +690,85 @@ input:focus {
   font-size: 14px;
 }
 
+
+.CustomerService{
+  background-color: var(--white);
+  border-radius: 25px;
+  margin: 0 auto;
+  margin-top: 5.813rem ;
+  /* padding: 1rem 5rem 1rem 5rem; */
+  padding: 1rem;
+
+  height: 67vh;
+  overflow: auto;
+}
+
+.CustomerService::-webkit-scrollbar {
+  width: 10px;
+}
+
+.CustomerService::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.CustomerService__CustomerDetail--head , .CustomerDetailCard{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-right: 2rem;
+  place-items: center;
+  text-align: center;
+}
+
+.customerDetail{
+  height: 55vh;
+overflow: auto;
+}
+.customerDetail::-webkit-scrollbar {
+  width: 10px;
+}
+
+.customerDetail::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.customerDetail::-webkit-scrollbar-thumb {
+  background-color: #c2c2c2;
+  border-radius: 45px;
+  height: 10px;
+}
+
+.CustomerDetailCard{
+  color: var(--heather);
+}
+
+.MainMsg{
+padding-right: 2.875rem;
+/* font-size: 18px; */
+line-height: 33px;
+font-weight: 500;
+
+/* height: 75vh;
+overflow: auto; */
+}
+/* .MainMsg::-webkit-scrollbar {
+  width: 10px;
+}
+
+.MainMsg::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.MainMsg::-webkit-scrollbar-thumb {
+  background-color: #c2c2c2;
+  border-radius: 45px;
+  height: 10px;
+} */
+.MainMsg .modalComponent__head--button button{
+margin: 2.875rem 0 3.188rem 0;
+}
 
 /*!!!!!!!!!!!!!!!!ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss this is fucking responsive  */
 
@@ -825,6 +846,47 @@ input:focus {
   .orderImg {
     max-width: 83px;
   }
+
+  
+.modalComponent__information--product {
+  background-color: #121212;
+  padding: 20px 0 10px 15px;
+}
+.modalComponent__information--product--img img {
+  height: 14rem;
+}
+
+.modalComponent__information--title,
+.modalComponent__attachments--title,
+.modalComponent__writtenNote--title {
+  font-weight: 700;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.modalComponent__information--product {
+  display: flex;
+  gap: 2rem;
+  /* justify-content: space-between; */
+}
+
+.modalComponent__information--product--detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.modalComponent__information--product--detail--name,
+.modalComponent__information--product--detail--category,
+.modalComponent__information--product--detail--size,
+.modalComponent__information--product--detail--quantity {
+  line-height: 0.1;
+}
+
+.modalComponent__information--product--detail--name {
+  font-size: 20px;
+  line-height: 0.5;
+}
 }
 
 /*! /////////////////////////////////////////////////////////////////////////////////// */
