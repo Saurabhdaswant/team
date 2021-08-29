@@ -739,7 +739,7 @@ input:focus {
 
 .CustomerDetailCard {
   color: var(--heather);
-  margin: 0 1rem;
+  /* margin: 0 1rem; */
 }
 
 .MainMsg {
