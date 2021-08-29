@@ -129,7 +129,7 @@ const Navigation = () => {
             />
           </svg>
         </Link>
-        <Link to="/Account" className="icon profile" tabIndex="0" ref={refFive} onFocus={updateFill}>
+        <Link to="/Customers" className="icon profile" tabIndex="0" ref={refFive} onFocus={updateFill}>
           <svg
             // width="17"
             // height="17"
