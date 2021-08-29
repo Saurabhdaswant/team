@@ -1,5 +1,5 @@
 import NewOrder from "./NewOrder"
-const notification_components = () => {
+const Notification_components = () => {
   return (
     <div>
           <div className="theHead">
@@ -24,4 +24,4 @@ const notification_components = () => {
         </div>
   );
 };
-export default notification_components;
+export default Notification_components;
