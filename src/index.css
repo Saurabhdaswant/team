@@ -738,8 +738,8 @@ input:focus {
 }
 
 .CustomerDetailCard {
-  color: var(--malibu);
-  /* margin: 0 1rem; */
+  color: var(--heather);
+  margin: 0 1rem;
 }
 
 .MainMsg {
