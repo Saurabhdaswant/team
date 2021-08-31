@@ -985,9 +985,6 @@ input:focus {
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
-
-    /* height: 75vh;
-  overflow: auto; */
   }
 
   .modalComponent__head--button button {
