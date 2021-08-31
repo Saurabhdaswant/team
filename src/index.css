@@ -335,15 +335,10 @@ input:focus {
   cursor: pointer;
 }
 
-/* .TrackAndStepper:focus {
-  height: max-content;
-} */
 
 .focus {
   height: max-content;
-  /* box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1); */
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.09);
-
   border-radius: 10px;
 }
 
@@ -382,10 +377,6 @@ input:focus {
 .itemSeven {
   color: #121212;
   font-weight: 600;
-}
-
-.OrdersShop__Stepper {
-  /* border: 2px solid rgb(63, 46, 139); */
 }
 
 .Done__CheckList,
@@ -533,10 +524,6 @@ input:focus {
   font-weight: 600;
 }
 
-.notification__id {
-  /* font-weight: 600; */
-}
-
 .notification__order {
   display: flex;
   justify-content: space-between;
@@ -590,10 +577,12 @@ input:focus {
 
 .modalComponent__head--button button {
   color: var(--red);
-  border-radius: 0.3rem;
-  padding: 0.3rem 1.4rem;
+  border-radius: 0.625rem;
+  padding: 0.6rem 2.5rem;
+  font-size: 17px;
   background-color: var(--athensGray);
   font-weight: 700;
+  text-transform: capitalize;
 }
 
 .modalComponent__main {
@@ -622,9 +611,31 @@ input:focus {
   border-radius: 1.875rem;
   padding: 25px 0 15px 15px;
   color: var(--heather);
+
+  display: flex;
+  gap: 1.5rem;
 }
 .modalComponent__information--product--img img {
   height: 14rem;
+}
+
+
+.modalComponent__information--product--img--downloadBtn button{
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 0.625rem;
+  padding: 0 1.5rem;
+  font-weight: 700;
+/* 
+  position: fixed;
+  top: 22rem;
+  right: 14rem; */
+  display: flex; 
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
 }
 
 .modalComponent__information--title,
@@ -636,9 +647,7 @@ input:focus {
 }
 
 .modalComponent__information--product {
-  display: flex;
-  gap: 2rem;
-  /* justify-content: space-between; */
+
 }
 
 .modalComponent__information--product--detail {
@@ -654,7 +663,7 @@ input:focus {
   line-height: 0.1;
 }
 
-.modalComponent__information--product--detail--name {
+.modalComponent__information--product--detail--name .bold {
   font-size: 20px;
   line-height: 0.5;
 }
@@ -662,7 +671,6 @@ input:focus {
 .modalComponent__attachments--container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   text-align: center;
   background-color: var(--athensGray);
   border-radius: 1.875rem;
@@ -672,13 +680,24 @@ input:focus {
   line-height: 0.8;
 }
 
+.modalComponent__attachments--container--name,
+.modalComponent__attachments--container--size,
+.modalComponent__attachments--container--download {
+  display: flex;
+  flex-direction: column;
+}
+
+.modalComponent__attachments--container--download {
+  align-items: center;
+  text-align: center;
+}
+
 .downloadSvg {
   background-color: var(--white);
   border-radius: 1.875rem;
-  padding: 3px;
+  padding: 5px;
   width: 40px;
-
-  margin: 6px auto;
+  margin: 10px auto;
 }
 
 .modalComponent__writtenNote--Note {
@@ -712,9 +731,14 @@ input:focus {
 .CustomerDetailCard {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding-right: 2rem;
+  /* padding-right: 2rem; */
   place-items: center;
   text-align: center;
+  margin: 0 1rem;
+}
+
+.CustomerDetailCard {
+  color: var(--heather);
 }
 
 .customerDetail {
@@ -737,21 +761,19 @@ input:focus {
   height: 10px;
 }
 
-.CustomerDetailCard {
-  color: var(--heather);
-  margin: 0 1rem;
-}
-
 .MainMsg {
   padding-right: 2.875rem;
-  /* font-size: 18px; */
   line-height: 33px;
   font-weight: 500;
 
-  /* height: 75vh;
-overflow: auto; */
+  padding-right: 4rem;
+  font-size: 18px;
+  /* font-weight: 600;  */
+
+  height: 78vh;
+  overflow: auto;
 }
-/* .MainMsg::-webkit-scrollbar {
+.MainMsg::-webkit-scrollbar {
   width: 10px;
 }
 
@@ -764,12 +786,12 @@ overflow: auto; */
   background-color: #c2c2c2;
   border-radius: 45px;
   height: 10px;
-} */
-.MainMsg .modalComponent__head--button button {
+}
+.MainMsg_Container .modalComponent__head--button button {
   margin: 2.875rem 0 3.188rem 0;
 }
 
-/*!!!!!!!!!!!!!!!!ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss this is fucking responsive  */
+/*!!!!!!!!!!!!!!!!ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss   */
 
 @media (min-width: 1600px) {
   /* user profile  */
@@ -845,46 +867,6 @@ overflow: auto; */
   .orderImg {
     max-width: 83px;
   }
-
-  .modalComponent__information--product {
-    background-color: #121212;
-    padding: 20px 0 10px 15px;
-  }
-  .modalComponent__information--product--img img {
-    height: 14rem;
-  }
-
-  .modalComponent__information--title,
-  .modalComponent__attachments--title,
-  .modalComponent__writtenNote--title {
-    font-weight: 700;
-    padding: 1rem;
-    font-size: 1.3rem;
-  }
-
-  .modalComponent__information--product {
-    display: flex;
-    gap: 2rem;
-    /* justify-content: space-between; */
-  }
-
-  .modalComponent__information--product--detail {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-  }
-
-  .modalComponent__information--product--detail--name,
-  .modalComponent__information--product--detail--category,
-  .modalComponent__information--product--detail--size,
-  .modalComponent__information--product--detail--quantity {
-    line-height: 0.1;
-  }
-
-  .modalComponent__information--product--detail--name {
-    font-size: 20px;
-    line-height: 0.5;
-  }
 }
 
 /*! /////////////////////////////////////////////////////////////////////////////////// */
@@ -952,6 +934,14 @@ overflow: auto; */
     width: 7rem;
   }
 
+  .notification__order {
+    height: 50px;
+  }
+
+  .order__time{
+    height: 20px;
+  }
+
   .main__childOne__orders {
     font-size: 1.4rem;
   }
@@ -988,5 +978,53 @@ overflow: auto; */
     bottom: 13px;
     right: 0px;
     left: 0px;
+  }
+
+  .MainMsg {
+    padding-right: 5rem;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+
+    /* height: 75vh;
+  overflow: auto; */
+  }
+
+  .modalComponent__head--button button {
+    padding: 0.7rem 2.5rem;
+    font-size: 18px;
+    border-radius: 0.625rem;
+  }
+
+  .modalComponent__information--product {
+    padding: 25px;
+  }
+
+  .modalComponent__information--product--img img {
+    height: 16rem;
+  }
+
+  .modalComponent__information--product--img--downloadBtn button{
+    display: flex; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .modalComponent__information--product--detail--name,
+  .modalComponent__information--product--detail--category,
+  .modalComponent__information--product--detail--size,
+  .modalComponent__information--product--detail--quantity {
+    line-height: 0.3;
+  }
+
+  .modalComponent__writtenNote--Note {
+    padding: 30px;
+    font-size: 18px;
+  }
+
+  .modalComponent__head--id {
+    font-size: 21px;
   }
 }
