@@ -1,14 +1,15 @@
 import { Switch, Route } from "react-router-dom";
 import MainMsg from "../MainMsg";
 import Modal from "../Modal";
-import Notification_components from "../Notification_components"
+import NotificationComponents from "../NotificationComponents"
 
 const Notification = () => {
   return (
     <div className="notification">
       <div className="main-child-two">
+        <NotificationComponents/>
         <Switch>
-        <Route exact path="/" component={Notification_components} />
+        <Route exact path="/" component={NotificationComponents} />
         <Route path="/CustomerService" component={MainMsg} />
         <Route path="/Customers" component={Modal} />
         </Switch>
