@@ -7,9 +7,8 @@ const Notification = () => {
   return (
     <div className="notification">
       <div className="main-child-two">
-        <NotificationComponents/>
         <Switch>
-        <Route exact path="/" component={NotificationComponents} />
+        <Route exact path="/" component={ NotificationComponents } />
         <Route path="/CustomerService" component={MainMsg} />
         <Route path="/Customers" component={Modal} />
         </Switch>
