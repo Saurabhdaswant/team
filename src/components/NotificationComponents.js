@@ -1,7 +1,11 @@
-import NewOrder from "./NewOrder"
-const Notification_components = () => {
+import NewOrder from "./NewOrder";
+const Notification_components = ({ showModal, setShowModal, Modal }) => {
   return (
-    <div>
+    <>
+      {showModal ? (
+        <Modal setShowModal={setShowModal} />
+      ) : (
+        <div>
           <div className="theHead">
             <div className="head">
               <img src="svg/Bell.svg" alt="" />
@@ -22,6 +26,8 @@ const Notification_components = () => {
             <NewOrder />
           </div>
         </div>
+      )}
+    </>
   );
 };
 export default Notification_components;

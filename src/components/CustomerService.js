@@ -3,8 +3,13 @@ import { useState } from "react";
 import customerDetail from "./CustomerDetailData";
 
 
-const CustomerService = () => {
+const CustomerService = ({setShowMessage}) => {
   const [toogle, settoogle] = useState(0);
+
+  const handleClick = (id) => {
+    settoogle(id)
+    setShowMessage(true)
+  }
 
   return (
     <div className="CustomerService">
@@ -19,7 +24,7 @@ const CustomerService = () => {
       <div className="customerDetail">
         {customerDetail.map((detail) => {
           const { id } = detail;
-          return <CustomerDetail key={id} detail={detail} toogle={toogle}  settoogle={settoogle} />;
+          return <CustomerDetail key={id} detail={detail} toogle={toogle} handleClick={handleClick}  />;
         })}
       </div>
     </div>

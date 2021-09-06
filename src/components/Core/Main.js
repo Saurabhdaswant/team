@@ -7,7 +7,7 @@ import Customer from "../CustomerService"
 import OrdersQuote from "../OrdersQuote"
 import OrdersShop from "../OrdersShop";
 
-const Main = () => {
+const Main = ({setShowModal,setShowMessage}) => {
   return (
     <div className="main">
       <div className="main__childOne">
@@ -25,10 +25,10 @@ const Main = () => {
         </div>
         
         <Switch>
-              <Route exact path="/" component={OrdersShop} />
+              <Route exact path="/"> <OrdersShop setShowModal={setShowModal} /> </Route>
               <Route  path="/OrdersQuote" component={OrdersQuote} />
               <Route path="/Fundraise" component={Fundraise} />
-              <Route path="/CustomerService" component={CustomerService} />
+              <Route  path="/CustomerService"> <CustomerService setShowMessage={setShowMessage} /></Route>
               <Route path="/Customers" component={Customer} />
               <Route path="/Statictis" component={Statictis} />
               <Route path="/Money" component={Money} />

@@ -1,8 +1,8 @@
-function CustomerDetail({ detail, settoogle, toogle }) {
+function CustomerDetail({ detail, toogle , handleClick }) {
   const { Name, Address, PhoneNo, EmailID, id } = detail;
   return (
     <div
-      onClick={() => settoogle(id)}
+      onClick={() => handleClick(id)}
       className={`CustomerDetailCard ${toogle === id && "focus"}`}
       tabindex="0"
     >

@@ -1,11 +1,11 @@
 import DownloadSvg from "./DownloadSvg";
 import DownloadWhiteSvg from "./DownloadWhiteSvg"
-const Modal = () => {
+const Modal = ({setShowModal}) => {
   return (
     <div className="modalComponent">
       <div className="modalComponent__head">
         <div className="modalComponent__head--button">
-          <button>close x</button>
+          <button onClick={()=> setShowModal(false)} >close x</button>
         </div>
         <div className="modalComponent__head--id">#1773455</div>
       </div>

@@ -2,9 +2,13 @@ import { useState } from "react";
 import shirts from "./ShirtData";
 import steps from "./StepperDB";
 
-const OrdersShop = () => {
+const OrdersShop = ({setShowModal}) => {
   const [toogle, settoogle] = useState(0);
 
+  const handleClick = (id) => {
+    settoogle(id)
+    setShowModal(true)
+  }
   return (
     <>
     <div className="main__childOne__navbar">
@@ -56,7 +60,7 @@ const OrdersShop = () => {
         } = shirt;
         return (
           <div
-            onClick={() => settoogle(id) }
+            onClick={() => handleClick(id) }
             className={`TrackAndStepper ${toogle === id && "focus"}`}
             tabindex="0"
           >
