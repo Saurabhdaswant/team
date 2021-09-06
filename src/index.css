@@ -40,6 +40,7 @@ li {
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 .bold {
@@ -956,7 +957,6 @@ input:focus {
 
   .OrdersShop {
     height: 50vh;
-    /* border: 2px solid seagreen; */
   }
 
   .TrackAndStepper {
@@ -992,6 +992,7 @@ input:focus {
     font-size: 18px;
     border-radius: 0.625rem;
   }
+
 
   .modalComponent__information--product {
     padding: 25px;
