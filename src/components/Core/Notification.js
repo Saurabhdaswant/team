@@ -29,7 +29,7 @@ const Notification = ({
               NotificationComponents={NotificationComponents}
             />
           </Route>
-          {/* <Route path="/Customers" component={Modal} /> */}
+          <Route path="/Customers" component={NotificationComponents} />
         </Switch>
       </div>
     </div>
