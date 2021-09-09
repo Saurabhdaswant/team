@@ -518,6 +518,7 @@ input:focus {
   padding: 0 1rem;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
+  height: 8.5rem;
 }
 
 .notification__type {
@@ -562,6 +563,9 @@ input:focus {
 .order__time {
   display: flex;
   justify-content: flex-end;
+
+  position: relative;
+  bottom: 1rem;
 }
 
 .modalComponent {
