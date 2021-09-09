@@ -255,7 +255,7 @@ input:focus {
 
 .filter,
 .sort {
-  background-color:var(--white);
+  background-color: var(--white);
   padding: 0.5rem 1rem;
   border-radius: 15px;
   color: var(--grey);
@@ -267,9 +267,10 @@ input:focus {
   text-align: center;
 }
 
-.filter__select , .sort__select{
+.filter__select,
+.sort__select {
   padding: 0.8rem;
-  background: #EDEDEE;
+  background: #ededee;
   border-radius: 8.5px;
   cursor: pointer;
 }
@@ -337,7 +338,7 @@ input:focus {
   max-width: 97%;
 
   margin: 0 auto;
-  padding: 0.5rem 0.5rem 0.5rem 0 ;
+  padding: 0.5rem 0.5rem 0.5rem 0;
 
   height: 4.5rem;
   overflow: hidden;
@@ -349,7 +350,6 @@ input:focus {
   text-transform: capitalize;
   cursor: pointer;
 }
-
 
 .focus {
   height: max-content;
@@ -365,7 +365,6 @@ input:focus {
   align-items: center;
 
   color: #bbc1ce;
-
 }
 
 .itemOne {
@@ -387,7 +386,7 @@ input:focus {
   margin-right: -10px;
 }
 
-.itemOne__Img--Shirt--dot{
+.itemOne__Img--Shirt--dot {
   width: 10px;
   height: 10px;
   border-radius: 100%;
@@ -651,18 +650,17 @@ input:focus {
   height: 14rem;
 }
 
-
-.modalComponent__information--product--img--downloadBtn button{
+.modalComponent__information--product--img--downloadBtn button {
   background-color: var(--black);
   color: var(--white);
   border-radius: 0.625rem;
   padding: 0 1.5rem;
   font-weight: 700;
-/* 
+  /* 
   position: fixed;
   top: 22rem;
   right: 14rem; */
-  display: flex; 
+  display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -676,10 +674,6 @@ input:focus {
   font-weight: 700;
   padding: 1rem;
   font-size: 1.3rem;
-}
-
-.modalComponent__information--product {
-
 }
 
 .modalComponent__information--product--detail {
@@ -721,8 +715,8 @@ input:focus {
 
 .modalComponent__attachments--container--name p,
 .modalComponent__attachments--container--size p,
-.modalComponent__attachments--container--download p{
-margin: 10px;
+.modalComponent__attachments--container--download p {
+  margin: 10px;
 }
 
 .modalComponent__attachments--container--download {
@@ -976,7 +970,7 @@ margin: 10px;
     height: 50px;
   }
 
-  .order__time{
+  .order__time {
     height: 20px;
   }
 
@@ -1030,7 +1024,6 @@ margin: 10px;
     border-radius: 0.625rem;
   }
 
-
   .modalComponent__information--product {
     padding: 25px;
   }
@@ -1039,8 +1032,8 @@ margin: 10px;
     height: 16rem;
   }
 
-  .modalComponent__information--product--img--downloadBtn button{
-    display: flex; 
+  .modalComponent__information--product--img--downloadBtn button {
+    display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
