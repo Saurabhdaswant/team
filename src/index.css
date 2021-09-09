@@ -236,7 +236,7 @@ input:focus {
 .main__childOne__orders {
   display: flex;
   justify-content: space-between;
-  padding: 0 3rem;
+  padding: 0 0 0 3rem;
   text-align: center;
   align-items: center;
   margin: 0.5rem 0;
@@ -255,10 +255,9 @@ input:focus {
 
 .filter,
 .sort {
-  /* width: 6rem; */
   background-color:var(--white);
   padding: 0.5rem 1rem;
-  border-radius: 0.55rem;
+  border-radius: 15px;
   color: var(--grey);
 
   display: flex;
@@ -574,8 +573,6 @@ input:focus {
 .notification__orderName {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* font-weight: 600; */
   padding: 0 1rem;
 }
 
@@ -614,6 +611,10 @@ input:focus {
   background-color: var(--athensGray);
   font-weight: 700;
   text-transform: capitalize;
+}
+
+.modalComponent__head--id {
+  font-size: 21px;
 }
 
 .modalComponent__main {
@@ -718,6 +719,12 @@ input:focus {
   flex-direction: column;
 }
 
+.modalComponent__attachments--container--name p,
+.modalComponent__attachments--container--size p,
+.modalComponent__attachments--container--download p{
+margin: 10px;
+}
+
 .modalComponent__attachments--container--download {
   align-items: center;
   text-align: center;
@@ -728,11 +735,11 @@ input:focus {
   border-radius: 1.875rem;
   padding: 5px;
   width: 40px;
-  margin: 10px auto;
+  margin: 5px auto;
 }
 
 .modalComponent__writtenNote--Note {
-  padding: 10px 30px;
+  padding: 20px;
   border-radius: 1.875rem;
   background-color: var(--athensGray);
   font-size: 14px;
