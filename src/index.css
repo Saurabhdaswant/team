@@ -473,7 +473,7 @@ input:focus {
   display: flex;
   gap: 0.5rem;
   justify-content: flex-end;
-  padding: 2rem 0 0 0;
+  padding: 2rem 2rem 0 0;
 }
 
 .head img {
@@ -571,7 +571,7 @@ input:focus {
 .modalComponent__head {
   display: flex;
   justify-content: space-between;
-  padding: 3rem 0 0 0;
+  padding: 3rem 2rem 0 0;
   margin-bottom: 1rem;
   font-weight: 600;
 }
