@@ -71,6 +71,7 @@ const OrdersShop = ({ setShowModal }) => {
                   <div className="OrdersShop__Track">
                     <div className="Track__GridTrack" key={id}>
                       <div className="itemOne">
+                      <div style={{ background:`${color}` }}  className="itemOne__Img--Shirt--dot negativeMargin"></div>
                         <div className="itemOne__Img--Shirt orderImg">
                           <img src={img} alt="" />
                         </div>

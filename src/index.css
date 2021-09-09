@@ -338,7 +338,7 @@ input:focus {
   max-width: 97%;
 
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0 ;
 
   height: 4.5rem;
   overflow: hidden;
@@ -366,7 +366,7 @@ input:focus {
   align-items: center;
 
   color: #bbc1ce;
-  /* border: 2px solid rgb(139, 88, 46); */
+
 }
 
 .itemOne {
@@ -382,6 +382,17 @@ input:focus {
 .itemOne p {
   margin: 0;
   padding: 0;
+}
+
+.negativeMargin {
+  margin-right: -10px;
+}
+
+.itemOne__Img--Shirt--dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #61c6ff;
 }
 
 .ShirtType__BrandName {

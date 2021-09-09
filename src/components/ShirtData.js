@@ -14,7 +14,7 @@ const menu = [
   {
     id: 2,
     shirtName: "original fav",
-    color: "dark blue",
+    color: "darkblue",
     orderId: 1774852,
     category: "premium",
     size: "XXL",
@@ -26,7 +26,7 @@ const menu = [
   {
     id: 3,
     shirtName: "anvil tee",
-    color: "pale green",
+    color: "palegreen",
     orderId: 1730837,
     category: "basic",
     size: "L",
@@ -38,7 +38,7 @@ const menu = [
   {
     id: 4,
     shirtName: "bela ciao",
-    color: "hot pink",
+    color: "hotpink",
     orderId: 1771637,
     category: "platinum",
     size: "sm",
@@ -50,7 +50,7 @@ const menu = [
   {
     id: 5,
     shirtName: "bela ciao",
-    color: "hot pink",
+    color: "red",
     orderId: 1771637,
     category: "platinum",
     size: "sm",
@@ -62,7 +62,7 @@ const menu = [
   {
     id: 6,
     shirtName: "bela ciao",
-    color: "hot pink",
+    color: "yellow",
     orderId: 1771637,
     category: "platinum",
     size: "sm",
