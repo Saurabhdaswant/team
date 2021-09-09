@@ -255,11 +255,26 @@ input:focus {
 
 .filter,
 .sort {
-  width: 6rem;
-  background-color: #fff;
-  padding: 0.5rem 0;
+  /* width: 6rem; */
+  background-color:var(--white);
+  padding: 0.5rem 1rem;
   border-radius: 0.55rem;
+  color: var(--grey);
+
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
 }
+
+.filter__select , .sort__select{
+  padding: 0.8rem;
+  background: #EDEDEE;
+  border-radius: 8.5px;
+  cursor: pointer;
+}
+
 .title {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
