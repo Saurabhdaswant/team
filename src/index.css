@@ -871,10 +871,11 @@ input:focus {
 }
 
 .popup__confirm__yes {
-  color: var(--red);
+  color: var(--malachite);
 }
 .popup__confirm__no {
-  color: var(--malachite);
+
+    color: var(--red);
 }
 
 /*!!!!!!!!!!!!!!!!ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss   */
