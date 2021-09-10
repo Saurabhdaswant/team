@@ -1,9 +1,11 @@
 import { useState } from "react";
 import shirts from "./ShirtData";
 import steps from "./StepperDB";
+import Popup from "./Popup";
 
 const OrdersShop = ({ setShowModal }) => {
   const [toogle, settoogle] = useState(0);
+  const [ShowPopup, setShowPopup] = useState(false);
 
   const handleClick = (id) => {
     settoogle(id);
@@ -94,7 +96,7 @@ const OrdersShop = ({ setShowModal }) => {
                         {steps.map((step) => {
                           const { done } = step;
                           return (
-                            <div
+                            <div onClick={()=> setShowPopup(true)} 
                               className={done ? "done" : "CheckList__Circle"}
                             ></div>
                           );
@@ -132,6 +134,8 @@ const OrdersShop = ({ setShowModal }) => {
           </div>
         </div>
       </div>
+
+      { ShowPopup && <Popup setShowPopup={setShowPopup} />}
     </>
   );
 };
