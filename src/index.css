@@ -1,22 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 :root {
+
+  /* font family */
+  --font: "Poppins", sans-serif;
+
+  /* primary colors */
+  --danger: #ff0000;
+  --success: #00d930;
+
+  /* Ten shades of Grey */
   --black: #000000;
-  --codGray: #121212;
-  --capeCod: #393c3f;
+  --black-light: #121212;
+  --black-grey: #393c3f;
   --grey: #878787;
-  --silverChalice: #aeaeae;
-  --heather: #bbc1ce;
+  --grey-two: #aeaeae;
+  --grey-three: #bbc1ce;
   --silver: #c2c2c2;
-  --athensGray: #f4f6f8;
+  --grey-four: #f0f0f0;
+  --grey-five: #f4f6f8;
   --white: #ffffff;
+
 
   --guardsmanRed: #d20000;
   --malibu: #61c6ff;
   --grannySmithApple: #8be499;
-  --red: #ff0000;
-  --malachite: #00d930;
-  --font: "Poppins", sans-serif;
+
+
+  --borderRadius-10px : 10px ;
+  --borderRadius-45px : 45px ;
+  --borderRadius-1-5rem : 1.5rem ;
+  --borderRadius-50-percent:50%;
+
 }
 
 * {
@@ -65,7 +80,7 @@ button {
 .logo {
   width: 3.5rem;
   height: 3.5rem;
-  border-radius: 50%;
+  border-radius: var(--borderRadius-50-percent);
   background-color: #f4f6f8;
   margin: 0.5rem 0 6rem 0;
   display: flex;
@@ -324,13 +339,13 @@ input:focus {
 }
 
 .OrdersShop::-webkit-scrollbar-track {
-  border-radius: 10px;
+  border-radius: var(--borderRadius-10px);
   background-color: transparent;
 }
 
 .OrdersShop::-webkit-scrollbar-thumb {
   background-color: #c2c2c2;
-  border-radius: 45px;
+  border-radius: var(--borderRadius-45px);
   height: 10px;
 }
 
@@ -356,7 +371,7 @@ input:focus {
 .focus {
   height: max-content;
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.09);
-  border-radius: 10px;
+  border-radius: var(--borderRadius-10px);
 }
 
 .OrdersShop__Track .Track__GridTrack {
@@ -447,7 +462,7 @@ input:focus {
 .done {
   width: 1.3rem;
   height: 1.3rem;
-  border-radius: 50%;
+  border-radius: var(--borderRadius-50-percent);
   background-color: #00d930;
 }
 
@@ -455,7 +470,7 @@ input:focus {
   width: 1.3rem;
   height: 1.3rem;
   border: 3px solid #121212;
-  border-radius: 50%;
+  border-radius: var(--borderRadius-50-percent);
   background: #fff;
 
   z-index: 10;
@@ -527,20 +542,20 @@ input:focus {
 }
 
 .theHead__notification::-webkit-scrollbar-track {
-  border-radius: 10px;
+  border-radius: var(--borderRadius-10px);
   background-color: transparent;
 }
 
 .theHead__notification::-webkit-scrollbar-thumb {
   background-color: #c2c2c2;
-  border-radius: 45px;
+  border-radius: var(--borderRadius-45px);
   height: 10px;
 }
 
 .main-child-two .notifications {
   color: #bbc1ce;
   background-color: #f4f6f8;
-  border-radius: 1.5rem;
+  border-radius: var(--borderRadius-1-5rem);
   padding: 0 1rem;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
@@ -629,13 +644,13 @@ input:focus {
 }
 
 .modalComponent__main::-webkit-scrollbar-track {
-  border-radius: 10px;
+  border-radius: var(--borderRadius-10px);
   background-color: transparent;
 }
 
 .modalComponent__main::-webkit-scrollbar-thumb {
   background-color: #c2c2c2;
-  border-radius: 45px;
+  border-radius: var(--borderRadius-45px);
   height: 10px;
 }
 
@@ -736,7 +751,7 @@ input:focus {
 
 .modalComponent__writtenNote--Note {
   padding: 15px;
-  border-radius: 10px;
+  border-radius: var(--borderRadius-10px);
   background-color: var(--athensGray);
   font-size: 14px;
 }
@@ -757,7 +772,7 @@ input:focus {
 }
 
 .CustomerService::-webkit-scrollbar-track {
-  border-radius: 10px;
+  border-radius: var(--borderRadius-10px);
   background-color: transparent;
 }
 
@@ -786,13 +801,13 @@ input:focus {
 }
 
 .customerDetail::-webkit-scrollbar-track {
-  border-radius: 10px;
+  border-radius: var(--borderRadius-10px);
   background-color: transparent;
 }
 
 .customerDetail::-webkit-scrollbar-thumb {
   background-color: #c2c2c2;
-  border-radius: 45px;
+  border-radius: var(--borderRadius-45px);
   height: 10px;
 }
 
@@ -813,24 +828,24 @@ input:focus {
 }
 
 .MainMsg::-webkit-scrollbar-track {
-  border-radius: 10px;
+  border-radius: var(--borderRadius-10px);
   background-color: transparent;
 }
 
 .MainMsg::-webkit-scrollbar-thumb {
   background-color: #c2c2c2;
-  border-radius: 45px;
+  border-radius: var(--borderRadius-45px);
   height: 10px;
 }
 .MainMsg_Container .modalComponent__head--button button {
   margin: 2.875rem 0 3.188rem 0;
 }
 
-.popup{
+.popup {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50% , -50%);
+  transform: translate(-50%, -50%);
   background-color: var(--white);
   border-radius: 30px;
   z-index: 1000;
@@ -844,7 +859,7 @@ input:focus {
   height: 200px;
 }
 
-.overlay{
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -854,14 +869,14 @@ input:focus {
   z-index: 1000;
 }
 
-.confirmButtons{
+.confirmButtons {
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
 }
 
 .popup__confirm__yes,
-.popup__confirm__no{
+.popup__confirm__no {
   background-color: #f0f0f0;
   border-radius: 25px;
   text-align: center;
@@ -874,15 +889,12 @@ input:focus {
   color: var(--malachite);
 }
 .popup__confirm__no {
-
-    color: var(--red);
+  color: var(--red);
 }
 
 /*!!!!!!!!!!!!!!!!ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss   */
 
 @media (min-width: 1600px) {
-
-
   /* user profile  */
   .Navigation {
     padding: 1.5rem 1.2rem 0 1rem;
@@ -934,7 +946,7 @@ input:focus {
   .main-child-two .notifications {
     color: #bbc1ce;
     background-color: #f4f6f8;
-    border-radius: 1.5rem;
+    border-radius: var(--borderRadius-1-5rem);
     padding: 0 1rem;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
@@ -991,7 +1003,7 @@ input:focus {
     margin-bottom: 8rem;
   }
   .icon {
-    border-radius: 1.5rem;
+    border-radius: var(--borderRadius-1-5rem);
   }
 
   .icon svg {
@@ -1093,14 +1105,14 @@ input:focus {
     left: 0px;
   }
 
-  .CustomerService{
+  .CustomerService {
     height: 75vh;
   }
 
   .CustomerService__CustomerDetail--head,
-.CustomerDetailCard {
-  font-size: 16px;
-}
+  .CustomerDetailCard {
+    font-size: 16px;
+  }
 
   .MainMsg {
     padding-right: 5rem;
@@ -1114,7 +1126,6 @@ input:focus {
     font-size: 18px;
     border-radius: 0.625rem;
   }
-
 
   .modalComponent__information--product {
     padding: 25px 25px 25px 0;
@@ -1153,3 +1164,6 @@ input:focus {
     font-size: 20px;
   }
 }
+
+
+
