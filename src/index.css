@@ -9,6 +9,12 @@
   --danger: #ff0000;
   --success: #00d930;
 
+    /* border radius */
+    --borderRadius-10px : 10px ;
+    --borderRadius-45px : 45px ;
+    --borderRadius-1-5rem : 1.5rem ;
+    --borderRadius-50-percent:50%;
+
   /* Ten shades of Grey */
   --black: #000000;
   --black-light: #121212;
@@ -21,17 +27,9 @@
   --grey-five: #f4f6f8;
   --white: #ffffff;
 
-
   --guardsmanRed: #d20000;
   --malibu: #61c6ff;
   --grannySmithApple: #8be499;
-
-
-  --borderRadius-10px : 10px ;
-  --borderRadius-45px : 45px ;
-  --borderRadius-1-5rem : 1.5rem ;
-  --borderRadius-50-percent:50%;
-
 }
 
 * {
@@ -42,7 +40,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font);
-  background-color: var(--codGray);
+  background-color: var(--black-light);
   text-transform: capitalize;
 }
 
@@ -81,7 +79,7 @@ button {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: var(--borderRadius-50-percent);
-  background-color: #f4f6f8;
+  background-color: var(--grey-five);
   margin: 0.5rem 0 6rem 0;
   display: flex;
   justify-content: center;
@@ -139,7 +137,7 @@ button {
 /* main container */
 
 .main {
-  background-color: #f4f6f8;
+  background-color: var(--grey-five);
   border-radius: 2.5rem 0 0 2.5rem;
   width: 100%;
   height: 100vh;
@@ -161,7 +159,7 @@ button {
 
 .header__input {
   height: 3.3rem;
-  background-color: #ffffff;
+  background-color: var(--white);
   border-radius: 1.2rem;
   display: flex;
   align-items: center;
@@ -190,7 +188,7 @@ input:focus {
   justify-content: center;
   border-radius: 1rem;
   margin: 0.5rem 0.8rem 0.5rem 0;
-  background-color: #f4f6f8;
+  background-color: var(--grey-five);
 }
 
 /* status section  */
@@ -233,7 +231,7 @@ input:focus {
   margin-top: 2rem;
   background-color: #ffffff;
   border-radius: 1rem;
-  color: #bbc1ce;
+  color: var(--grey-three);
   font-weight: 500;
 }
 
@@ -261,7 +259,7 @@ input:focus {
 }
 
 .orders--type {
-  color: #878787;
+  color: var(--grey);
 }
 
 .orders__filterAndsort {
@@ -297,20 +295,20 @@ input:focus {
   grid-template-columns: repeat(8, 1fr);
   text-align: center;
   padding: 0.3rem 1.5rem;
-  color: #bbc1ce;
+  color: var(--grey-three);
   align-items: center;
   height: 4.5rem;
   overflow: hidden;
 }
 
 .title {
-  color: #121212;
+  color: var(--black-light);
   font-weight: 600;
   padding: 0 1.5rem;
 }
 
 .product {
-  color: #121212;
+  color: var(--black-light);
   grid-column-start: 1;
   grid-column-end: 3;
   text-align: left;
@@ -319,7 +317,7 @@ input:focus {
 
 /* main section of proccess bar  */
 .progreesContainer {
-  background-color: #ffffff;
+  background-color: var(--white);
   border-radius: 40px;
   margin: 0 auto;
   padding: 1rem 0.5rem 2rem 0;
@@ -330,8 +328,6 @@ input:focus {
 .OrdersShop {
   height: 39vh;
   overflow: auto;
-
-  /* border: 2px solid seagreen; */
 }
 
 .OrdersShop::-webkit-scrollbar {
@@ -344,7 +340,7 @@ input:focus {
 }
 
 .OrdersShop::-webkit-scrollbar-thumb {
-  background-color: #c2c2c2;
+  background-color: var(--silver);
   border-radius: var(--borderRadius-45px);
   height: 10px;
 }
@@ -381,7 +377,7 @@ input:focus {
   text-align: center;
   align-items: center;
 
-  color: #bbc1ce;
+  color: var(--grey-three);
 }
 
 .itemOne {
@@ -407,17 +403,17 @@ input:focus {
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  background: #61c6ff;
+  background: var(--malibu);
 }
 
 .ShirtType__BrandName {
   font-weight: 600;
   text-transform: capitalize;
-  color: #121212;
+  color: var(--black-light);
 }
 
 .itemSeven {
-  color: #121212;
+  color: var(--black-light);
   font-weight: 600;
 }
 
@@ -463,15 +459,15 @@ input:focus {
   width: 1.3rem;
   height: 1.3rem;
   border-radius: var(--borderRadius-50-percent);
-  background-color: #00d930;
+  background-color: var(--success);
 }
 
 .CheckList__Circle {
   width: 1.3rem;
   height: 1.3rem;
-  border: 3px solid #121212;
+  border: 3px solid  var(--black-light);
   border-radius: var(--borderRadius-50-percent);
-  background: #fff;
+  background: var(--white);
 
   z-index: 10;
 }
@@ -487,7 +483,7 @@ input:focus {
   content: "";
   height: 3px;
   width: 90%;
-  background: #00d930;
+  background-color: var(--success);;
   position: absolute;
   margin: auto;
   bottom: 13px;
@@ -496,12 +492,12 @@ input:focus {
 }
 
 .notification {
-  background-color: #f4f6f8;
+  background-color: var(--grey-five);
 }
 
 /* main__second--section  / product page  */
 .main-child-two {
-  background-color: #ffffff;
+  background-color: var(--white);
   width: 27vw;
   border-top-left-radius: 2.5rem;
   border-bottom-left-radius: 2.5rem;
@@ -547,14 +543,14 @@ input:focus {
 }
 
 .theHead__notification::-webkit-scrollbar-thumb {
-  background-color: #c2c2c2;
+  background-color: var(--silver);
   border-radius: var(--borderRadius-45px);
   height: 10px;
 }
 
 .main-child-two .notifications {
-  color: #bbc1ce;
-  background-color: #f4f6f8;
+  color: var(--grey-three);
+  background-color: var(--grey-five);
   border-radius: var(--borderRadius-1-5rem);
   padding: 0 1rem;
   padding-bottom: 0.5rem;
@@ -593,7 +589,7 @@ input:focus {
 }
 
 .order__name {
-  color: #121212;
+  color: var(--black-light);
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
@@ -620,11 +616,11 @@ input:focus {
 }
 
 .modalComponent__head--button button {
-  color: var(--red);
+  color: var(--danger);
   border-radius: 0.625rem;
   padding: 0.6rem 2.5rem;
   font-size: 17px;
-  background-color: var(--athensGray);
+  background-color: var(--grey-five);
   font-weight: 700;
   text-transform: capitalize;
 }
@@ -649,16 +645,16 @@ input:focus {
 }
 
 .modalComponent__main::-webkit-scrollbar-thumb {
-  background-color: #c2c2c2;
+  background-color: var(--silver);
   border-radius: var(--borderRadius-45px);
   height: 10px;
 }
 
 .modalComponent__information--product {
-  background-color: var(--athensGray);
+  background-color: var(--grey-five);
   border-radius: 1rem;
   padding: 25px 0 15px 15px;
-  color: var(--heather);
+  color: var(--grey-three);
 
   display: flex;
   padding: 1rem;
@@ -715,9 +711,9 @@ input:focus {
 .modalComponent__attachments--container {
   display: flex;
   justify-content: space-between;
-  background-color: var(--athensGray);
+  background-color: var(--grey-five);
   border-radius: 20px;
-  color: var(--heather);
+  color: var(--grey-three);
   padding: 5px;
   margin: 0 auto;
   line-height: 0.8;
@@ -752,7 +748,7 @@ input:focus {
 .modalComponent__writtenNote--Note {
   padding: 15px;
   border-radius: var(--borderRadius-10px);
-  background-color: var(--athensGray);
+  background-color: var(--grey-five);
   font-size: 14px;
 }
 
@@ -788,7 +784,7 @@ input:focus {
 }
 
 .CustomerDetailCard {
-  color: var(--heather);
+  color: var(--grey-three);
 }
 
 .customerDetail {
@@ -806,7 +802,7 @@ input:focus {
 }
 
 .customerDetail::-webkit-scrollbar-thumb {
-  background-color: #c2c2c2;
+  background-color: var(--silver);
   border-radius: var(--borderRadius-45px);
   height: 10px;
 }
@@ -833,7 +829,7 @@ input:focus {
 }
 
 .MainMsg::-webkit-scrollbar-thumb {
-  background-color: #c2c2c2;
+  background-color: var(--silver);
   border-radius: var(--borderRadius-45px);
   height: 10px;
 }
@@ -877,7 +873,7 @@ input:focus {
 
 .popup__confirm__yes,
 .popup__confirm__no {
-  background-color: #f0f0f0;
+  background-color: var(--grey-four);
   border-radius: 25px;
   text-align: center;
   align-items: center;
@@ -886,10 +882,10 @@ input:focus {
 }
 
 .popup__confirm__yes {
-  color: var(--malachite);
+  color: var(--success);
 }
 .popup__confirm__no {
-  color: var(--red);
+  color: var(--danger);
 }
 
 /*!!!!!!!!!!!!!!!!ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss   */
@@ -944,8 +940,8 @@ input:focus {
   }
 
   .main-child-two .notifications {
-    color: #bbc1ce;
-    background-color: #f4f6f8;
+    color: var(--grey-three);
+    background-color: var(--grey-five);
     border-radius: var(--borderRadius-1-5rem);
     padding: 0 1rem;
     padding-bottom: 0.5rem;
@@ -1097,7 +1093,7 @@ input:focus {
     content: "";
     height: 3px;
     width: 80%;
-    background: #00d930;
+    background-color: var(--success);
     position: absolute;
     margin: auto;
     bottom: 13px;
@@ -1167,3 +1163,24 @@ input:focus {
 
 
 
+/* 
+
+
+  --black: #000000;
+  --codGray: #121212;
+  --capeCod: #393c3f;
+  --grey: #878787;
+  --silverChalice: #aeaeae;
+  --heather: #bbc1ce;
+  --silver: #c2c2c2;
+  --athensGray: #f4f6f8;
+  --white: #ffffff;
+
+  --guardsmanRed: #d20000;
+  --malibu: #61c6ff;
+  --grannySmithApple: #8be499;
+  --red: #ff0000;
+  --malachite: #00d930;
+  --font: "Poppins", sans-serif;
+
+*/
