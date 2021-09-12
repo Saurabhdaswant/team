@@ -14,7 +14,7 @@ const Main = ({setShowModal,setShowMessage}) => {
         <div className="main__childOne__header">
           <div className="header__input">
             <input type="text" />
-            <div className="header__search">
+            <div className="header__search FLEX-CENTER-CENTER">
               <img src="svg/search.svg" alt="" />
             </div>
           </div>

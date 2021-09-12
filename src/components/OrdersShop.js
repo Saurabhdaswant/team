@@ -24,7 +24,7 @@ const OrdersShop = ({ setShowModal }) => {
         </nav>
       </div>
 
-      <div className="main__childOne__orders">
+      <div className="main__childOne__orders  ">
         <div className="orders--type">
           <h2>Pending orders</h2>
         </div>

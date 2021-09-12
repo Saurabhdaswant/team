@@ -55,12 +55,12 @@ const Navigation = () => {
   }, [])
 
   return (
-    <div className="Navigation">
-      <div className="logo">
+    <div className="Navigation FLEX-COLUMN-CENTER">
+      <div className="logo FLEX-CENTER-CENTER">
         <img src="svg/logo.svg" alt="" />
       </div>
       <div className="icons">
-        <Link to="/" className="icon OrdersShopIcon" tabIndex="0" ref={refOne} onFocus={updateFill} >
+        <Link to="/" className="icon OrdersShopIcon " tabIndex="0" ref={refOne} onFocus={updateFill} >
           <svg
             // width="20"
             // height="20"
