@@ -14,7 +14,6 @@ const Notification = ({
       <div className="main-child-two">
         <Switch>
           <Route exact path="/">
-            {" "}
             <NotificationComponents
               showModal={showModal}
               setShowModal={setShowModal}

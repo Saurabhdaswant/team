@@ -502,7 +502,7 @@ input:focus {
   border-top-left-radius: 2.5rem;
   border-bottom-left-radius: 2.5rem;
   height: 100%;
-  padding: 0 1rem 0 1.5rem;
+  padding: 0 0 0 1.5rem;
 }
 
 /* header section of product page  */
@@ -528,7 +528,7 @@ input:focus {
 }
 
 .theHead__notification {
-  height: 75vh;
+  height: 78.5vh;
   overflow: auto;
   padding-right: 1rem;
 }
