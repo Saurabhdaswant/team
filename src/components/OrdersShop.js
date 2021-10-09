@@ -73,7 +73,10 @@ const OrdersShop = ({ setShowModal }) => {
                   <div className="OrdersShop__Track">
                     <div className="Track__GridTrack" key={id}>
                       <div className="itemOne">
-                      <div style={{ background:`${color}` }}  className="itemOne__Img--Shirt--dot negativeMargin"></div>
+                        <div
+                          style={{ background: `${color}` }}
+                          className="itemOne__Img--Shirt--dot negativeMargin"
+                        ></div>
                         <div className="itemOne__Img--Shirt orderImg">
                           <img src={img} alt="" />
                         </div>
@@ -96,7 +99,8 @@ const OrdersShop = ({ setShowModal }) => {
                         {steps.map((step) => {
                           const { done } = step;
                           return (
-                            <div onClick={()=> setShowPopup(true)} 
+                            <div
+                              onClick={() => setShowPopup(true)}
                               className={done ? "done" : "CheckList__Circle"}
                             ></div>
                           );
@@ -135,7 +139,7 @@ const OrdersShop = ({ setShowModal }) => {
         </div>
       </div>
 
-      { ShowPopup && <Popup setShowPopup={setShowPopup} />}
+      {ShowPopup && <Popup setShowPopup={setShowPopup} />}
     </>
   );
 };
